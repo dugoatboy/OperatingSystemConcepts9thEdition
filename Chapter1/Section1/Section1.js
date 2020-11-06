@@ -4,8 +4,6 @@ function check_section1_question1() {
     var ans3 = document.getElementById("s1q1Answer3").value;
     var ans = 0;
 
-    console.log(ans1);
-
     if(ans1 == "hardware management" || ans1 == "provides basis for application programs" || ans1 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
@@ -68,7 +66,36 @@ function check_section1_question4() {
     var input1 = document.getElementById("s1q4Answer1").value;
 
     if (answer1 == input1) {
-        //TODO
-        console.log(true);
+        var s1q5 = document.getElementById("s1q5");
+        s1q5.style.display = "block";
     }
+}
+
+function check_section1_question5() {
+    var answer1 = "personal computer"
+    var answer2 = "mainframe terminal"
+    var answer3 = "workstation"
+    var answer4 = "mobile devices"
+    
+    var input1 = document.getElementById("s1q5Answer1").value;
+    var input2 = document.getElementById("s1q5Answer2").value;
+    var input3 = document.getElementById("s1q5Answer3").value;
+    var input4 = document.getElementById("s1q5Answer4").value;
+
+    if (input1 != answer1 || input1 != answer2 || input1 != answer3 || input1 != answer4) {
+        return;
+    }
+
+    if (input2 != answer1 || input2 != answer2 || input2 != answer3 || input2 != answer4) {
+        return;
+    }
+
+    if (input3 != answer1 || input3 != answer2 || input3 != answer3 || input3 != answer4) {
+        return;
+    }
+
+    if (input4 != answer1 || input4 != answer2 || input4 != answer3 || input4 != answer4) {
+        return;
+    }
+    
 }
