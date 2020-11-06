@@ -4,6 +4,8 @@ function check_section1_question1() {
     var ans3 = document.getElementById("q3Answer3");
     var ans = 0;
 
+    console.log(ans1);
+
     if(ans1 == "hardware management" || ans1 == "provides basis for application programs" || ans1 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
