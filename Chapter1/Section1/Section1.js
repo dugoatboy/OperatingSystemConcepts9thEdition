@@ -1,3 +1,7 @@
+function test() {
+    var input1 = document.getElementById("s3q5Answer1").value = "a set of software frameworks provided to application developers";
+    check_section3_question5();
+}
 function check_section1_question1() {    
     var ans1 = document.getElementById("s1q1Answer1").value;
     var ans2 = document.getElementById("s1q1Answer2").value;
@@ -170,7 +174,7 @@ function check_section3_question4() {
 function check_section3_question5() {
     var answer1 = "a set of software frameworks provided to application developers";
 
-    var input1 = document.getElementById("s3q2Answer1").value;
+    var input1 = document.getElementById("s3q5Answer1").value;
 
     if (answer1 != input1) {
         return;
