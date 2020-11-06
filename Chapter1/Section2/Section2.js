@@ -82,7 +82,7 @@ function check_section1_question6() {
 }
 
 function check_section1_question7() {
-    var answer1 = "electrically erasable prorammable read-only memory";
+    var answer1 = "electrically erasable programmable read-only memory";
     
     var input1 = document.getElementById("s1q7Answer1").value;
 
