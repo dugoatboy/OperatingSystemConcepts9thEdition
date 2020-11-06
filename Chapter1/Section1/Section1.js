@@ -27,8 +27,8 @@ function check_section1_question1() {
 function check_section1_question2() {
     var ans1 = document.getElementById("s1q2Answer1").value;
     var ans2 = document.getElementById("s1q2Answer2").value;
-    var ans3 = document.getElementById("s1q3Answer3").value;
-    var ans4 = document.getElementById("s1q4Answer4").value;
+    var ans3 = document.getElementById("s1q2Answer3").value;
+    var ans4 = document.getElementById("s1q2Answer4").value;
     var ans = 0;
 
     if(ans1 == "hardware" || ans1 == "operating system" || ans1 == "application programs" || ans1 == "users") {
