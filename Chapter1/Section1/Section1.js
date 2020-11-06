@@ -97,7 +97,7 @@ function check_section1_question5() {
     if (input4 != answer1 || input4 != answer2 || input4 != answer3 || input4 != answer4) {
         return;
     }
-    
+    console.log(true);
     document.getElementById("sub2").style.display = "block";
 }
 
