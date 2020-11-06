@@ -4,15 +4,15 @@ function check_section1_question1() {
     var ans3 = document.getElementById("q3Answer3");
     var ans = 0;
 
-    if(ans1 == "manage hardware" || ans1 == "provides basis for application programs" || ans1 == "acts as intermediary between the user and the hardware") {
+    if(ans1 == "hardware management" || ans1 == "provides basis for application programs" || ans1 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
 
-    if(ans2 == "manage hardware" || ans2 == "provides basis for application programs" || ans2 == "acts as intermediary between the user and the hardware") {
+    if(ans2 == "hardware management" || ans2 == "provides basis for application programs" || ans2 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
 
-    if(ans3 == "hardware management" || ans3 == "basis for application programs" || ans3 == "acts as intermediary between the user and the hardware") {
+    if(ans3 == "hardware management" || ans3 == "provides basis for application programs" || ans3 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
 
