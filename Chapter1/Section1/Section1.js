@@ -2,24 +2,23 @@ function checkQ1() {
     var ans1 = document.getElementById("q1Answer1");
     var ans2 = document.getElementById("q2Answer2");
     var ans3 = document.getElementById("q3Answer3");
-    var ans = 0;
 
-    if(ans1 = "manage hardware" || "provides basis for application programs" || "acts as intermediary between the user and the hardware") {
-        ans++;
+    var answers = ["hardware management", "user/computer intermediary", "provides a basis for applications"];
+    
+    if (answers.find(ans1) == null) {
+        return;
     }
 
-    if(ans2 = "manage hardware" || "provides basis for application programs" || "acts as intermediary between the user and the hardware") {
-        ans++;
+    if (answers.find(ans2) == null) {
+        return;
     }
 
-    if(ans3 = "manage hardware" || "provides basis for application programs" || "acts as intermediary between the user and the hardware") {
-        ans++;
+    if (answers.find(ans3) == null) {
+        return;
     }
-
-    if(ans >= 3) {
-        var sub2 = document.getElementById("sub2");
-        sub2.style.display = "block";
-    }
+    
+    var sub2 = document.getElementById("sub2");
+    sub2.style.display = "block";
 }
 
 function checkQ2() {
