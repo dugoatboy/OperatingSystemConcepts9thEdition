@@ -3,70 +3,52 @@ function test() {
     check_section3_question5();
 }
 function check_section1_question1() {    
-    var ans1 = document.getElementById("s1q1Answer1").value;
-    var ans2 = document.getElementById("s1q1Answer2").value;
-    var ans3 = document.getElementById("s1q1Answer3").value;
-    var ans = 0;
+    const answer1 = "CPUs";
+    const answer2 = "device controllers";
+    const answer3 = "shared memory";
+    var input1 = document.getElementById("s1q1Answer1").value;
+    var input2 = document.getElementById("s1q1Answer2").value;
+    var input3 = document.getElementById("s1q1Answer3").value;
 
-    if(ans1 == "hardware management" || ans1 == "provides basis for application programs" || ans1 == "acts as intermediary between the user and the hardware") {
-        ans++;
+    if (answer1 != input1 && answer1 != input2 && answer1 != input3) {
+        return;
     }
 
-    if(ans2 == "hardware management" || ans2 == "provides basis for application programs" || ans2 == "acts as intermediary between the user and the hardware") {
-        ans++;
+    if (answer2 != input1 && answer2 != input2 && answer2 != input3) {
+        return;
     }
 
-    if(ans3 == "hardware management" || ans3 == "provides basis for application programs" || ans3 == "acts as intermediary between the user and the hardware") {
-        ans++;
+    if (answer3 != input1 && answer3 != input2 && answer3 != input3) {
+        return;
     }
 
-    if(ans >= 3) {
-        var s1q2 = document.getElementById("s1q2");
-        s1q2.style.display = "block";
-    }
+    document.getElementById("s1q2").style.display = "block";
 }
 
 function check_section1_question2() {
-    var ans1 = document.getElementById("s1q2Answer1").value;
-    var ans2 = document.getElementById("s1q2Answer2").value;
-    var ans3 = document.getElementById("s1q2Answer3").value;
-    var ans4 = document.getElementById("s1q2Answer4").value;
-    var ans = 0;
+    const answer1 = "common bus";
+    var input1 = document.getElementById("s1q2Answer1").value;
 
-    if(ans1 == "hardware" || ans1 == "operating system" || ans1 == "application programs" || ans1 == "users") {
-        ans++;
+    if (answer1 != input1) {
+        return;
     }
 
-    if(ans2 == "hardware" || ans2 == "operating system" || ans2 == "application programs" || ans2 == "users") {
-        ans++;
-    }
-
-    if(ans3 == "hardware" || ans3 == "operating system" || ans3 == "application programs" || ans3 == "users") {
-        ans++;
-    }
-
-    if(ans4 == "hardware" || ans4 == "operating system" || ans4 == "application programs" || ans4 == "users") {
-        ans++;
-    }
-
-    if(ans >= 4) {
-        var s1q3 = document.getElementById("s1q3");
-        s1q3.style.display = "block";
-    }
+    document.getElementById("s1q3").style.display = "block";
 }
 
 function check_section1_question3() {
-    var answer1 = "provides the basic computing resources for the system"
+    const answer1 = "bootstrap program";
     var input1 = document.getElementById("s1q3Answer1").value;
 
-    if (answer1 == input1) {
-        var s1q4 = document.getElementById("s1q4");
-        s1q4.style.display = "block";
+    if (answer1 != input1) {
+        return;
     }
+
+    document.getElementById("s1q4").style.display = "block";
 }
 
 function check_section1_question4() {
-    var answer1 = "defines the ways in which the computer's resources are used to solve the user's problems"
+    var answer1 = "hardware"
     var input1 = document.getElementById("s1q4Answer1").value;
 
     if (answer1 == input1) {
@@ -76,41 +58,193 @@ function check_section1_question4() {
 }
 
 function check_section1_question5() {
-    var answer1 = "personal computer"
-    var answer2 = "mainframe terminal"
-    var answer3 = "workstations"
-    var answer4 = "mobile devices"
+    var answer1 = "ROM";
     
     var input1 = document.getElementById("s1q5Answer1").value;
-    var input2 = document.getElementById("s1q5Answer2").value;
-    var input3 = document.getElementById("s1q5Answer3").value;
-    var input4 = document.getElementById("s1q5Answer4").value;
 
-    if (input1 != answer1 && input1 != answer2 && input1 != answer3 & input1 != answer4) {
+    if (input1 != answer1) {
         return;
     }
+    
+    document.getElementById("s1q6").style.display = "block";
+}
 
-    if (input2 != answer1 && input2 != answer2 && input2 != answer3 && input2 != answer4) {
+function check_section1_question6() {
+    var answer1 = "read-only memory";
+    
+    var input1 = document.getElementById("s1q6Answer1").value;
+
+    if (input1 != answer1) {
         return;
     }
+    
+    document.getElementById("s1q7").style.display = "block";
+}
 
-    if (input3 != answer1 && input3 != answer2 && input3 != answer3 && input3 != answer4) {
+function check_section1_question7() {
+    var answer1 = "electrically erasable prorammable read-only memory";
+    
+    var input1 = document.getElementById("s1q7Answer1").value;
+
+    if (input1 != answer1) {
         return;
     }
+    
+    document.getElementById("s1q8").style.display = "block";
+}
 
-    if (input4 != answer1 && input4 != answer2 && input4 != answer3 && input4 != answer4) {
+function check_section1_question8() {
+    var answer1 = "firmware";
+    
+    var input1 = document.getElementById("s1q8Answer1").value;
+
+    if (input1 != answer1) {
         return;
     }
-    //console.log(true);
-    document.getElementById("sub2").style.display = "block";
+    
+    document.getElementById("s1q9").style.display = "block";
+}
+
+function check_section1_question9() {
+    var answer1 = "system processes";
+    var answer2 = "system daemons";
+    
+    var input1 = document.getElementById("s1q9Answer1").value;
+
+    if (input1 != answer1 && input1 != answer2) {
+        return;
+    }
+    
+    document.getElementById("s1q10").style.display = "block";
+}
+
+function check_section1_question10() {
+    var answer1 = "init";
+    
+    var input1 = document.getElementById("s1q10Answer1").value;
+
+    if (input1 != answer1) {
+        return;
+    }
+    
+    document.getElementById("s1q11").style.display = "block";
+}
+
+function check_section1_question11() {
+    var answer1 = "interrupts";
+    
+    var input1 = document.getElementById("s1q11Answer1").value;
+
+    if (input1 != answer1) {
+        return;
+    }
+    
+    document.getElementById("s1q12").style.display = "block";
+}
+
+function check_section1_question12() {
+    var answer1 = "hardware";
+    
+    var input1 = document.getElementById("s1q12Answer1").value;
+
+    if (input1 != answer1) {
+        return;
+    }
+    
+    document.getElementById("s1q13").style.display = "block";
+}
+
+function check_section1_question13() {
+    var answer1 = "system call";
+    var answer2 = "monitor call";
+    
+    var input1 = document.getElementById("s1q13Answer1").value;
+
+    if (input1 != answer1 && input1 != answer2) {
+        return;
+    }
+    
+    document.getElementById("s1q14").style.display = "block";
+}
+
+function check_section1_question14() {
+    var answer1 = "interrupt vector";
+    
+    var input1 = document.getElementById("s1q14Answer1").value;
+
+    if (input1 != answer1) {
+        return;
+    }
+    
+    document.getElementById("s1q15").style.display = "block";
+}
+
+function check_section1_question15() {
+    var answer1 = "stack";
+    
+    var input1 = document.getElementById("s1q15Answer1").value;
+
+    if (input1 != answer1) {
+        return;
+    }
+    
+    document.getElementById("s2q1").style.display = "block";
 }
 
 function check_section2_question1() {
-    var answer1 = "resource allocator";
-    var answer2 = "control program";
+    var answer1 = "main memory";
 
     var input1 = document.getElementById("s2q1Answer1").value;
-    var input2 = document.getElementById("s2q1Answer2").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q2").style.display = "block";
+}
+
+function check_section2_question2() {
+    var answer1 = "byte";
+
+    var input1 = document.getElementById("s2q2Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q3").style.display = "block";
+}
+
+function check_section2_question3() {
+    var answer1 = "load";
+
+    var input1 = document.getElementById("s2q3Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q4").style.display = "block";
+}
+
+function check_section2_question4() {
+    var answer1 = "store";
+
+    var input1 = document.getElementById("s2q4Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q5").style.display = "block";
+}
+
+function check_section2_question5() {
+    var answer1 = "small";
+    var answer2 = "volatile"
+
+    var input1 = document.getElementById("s2q5Answer1").value;
+    var input2 = document.getElementById("s2q5Answer2").value;
 
     if (answer1 != input1 && answer1 != input2) {
         return;
@@ -120,11 +254,71 @@ function check_section2_question1() {
         return;
     }
 
-    document.getElementById("sub3").style.display = "block";
+    document.getElementById("s2q6").style.display = "block";
+}
+
+function check_section2_question6() {
+    var answer1 = "secondary storae";
+
+    var input1 = document.getElementById("s2q6Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q7").style.display = "block";
+}
+
+function check_section2_question7() {
+    var answer1 = "magnetic disk";
+
+    var input1 = document.getElementById("s2q7Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q8").style.display = "block";
+}
+
+function check_section2_question8() {
+    var answer1 = "volatile storage";
+
+    var input1 = document.getElementById("s2q8Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q9").style.display = "block";
+}
+
+function check_section2_question9() {
+    var answer1 = "nonvolatile storage";
+
+    var input1 = document.getElementById("s2q9Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s2q10").style.display = "block";
+}
+
+function check_section2_question10() {
+    var answer1 = "cache";
+
+    var input1 = document.getElementById("s2q10Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s3q1").style.display = "block";
 }
 
 function check_section3_question1() {
-    var answer1 = "na";
+    var answer1 = "device controllers";
 
     var input1 = document.getElementById("s3q1Answer1").value;
 
@@ -136,7 +330,7 @@ function check_section3_question1() {
 }
 
 function check_section3_question2() {
-    var answer1 = "na";
+    var answer1 = "device driver";
 
     var input1 = document.getElementById("s3q2Answer1").value;
 
@@ -148,33 +342,9 @@ function check_section3_question2() {
 }
 
 function check_section3_question3() {
-    var answer1 = "the program that runs continuously";
+    var answer1 = "direct memory access";
 
     var input1 = document.getElementById("s3q3Answer1").value;
-
-    if (answer1 != input1) {
-        return;
-    }
-
-    document.getElementById("s3q4").style.display = "block";
-}
-
-function check_section3_question4() {
-    var answer1 = "programs associated with, but are not part of, the operating system";
-
-    var input1 = document.getElementById("s3q4Answer1").value;
-
-    if (answer1 != input1) {
-        return;
-    }
-
-    document.getElementById("s3q5").style.display = "block";
-}
-
-function check_section3_question5() {
-    var answer1 = "a set of software frameworks provided to application developers";
-
-    var input1 = document.getElementById("s3q5Answer1").value;
 
     if (answer1 != input1) {
         return;
