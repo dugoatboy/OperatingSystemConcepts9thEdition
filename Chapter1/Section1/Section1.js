@@ -1,3 +1,3 @@
 function checkQ1() {
-    return true;
+    console.log(true);
 }
