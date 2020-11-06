@@ -3,7 +3,7 @@ var sub2 = document.getElementById("sub2");
 var sub3 = document.getElementById("sub3");
 
 function checkQ1() {
-    sub2.style.display = "block";
+    console.log(sub1);
 }
 
 function checkQ2() {
