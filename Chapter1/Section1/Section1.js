@@ -1,5 +1,5 @@
 function check_section1_question1() {    
-    var ans1 = document.getElementById("q1Answer1").value;
+    var ans1 = document.getElementById("q1Answer1");
     var ans2 = document.getElementById("q2Answer2").value;
     var ans3 = document.getElementById("q3Answer3").value;
     var ans = 0;
