@@ -82,22 +82,22 @@ function check_section1_question5() {
     var input3 = document.getElementById("s1q5Answer3").value;
     var input4 = document.getElementById("s1q5Answer4").value;
 
-    if (input1 != answer1 || input1 != answer2 || input1 != answer3 || input1 != answer4) {
+    if (input1 != answer1 && input1 != answer2 && input1 != answer3 & input1 != answer4) {
         return;
     }
 
-    if (input2 != answer1 || input2 != answer2 || input2 != answer3 || input2 != answer4) {
+    if (input2 != answer1 && input2 != answer2 && input2 != answer3 && input2 != answer4) {
         return;
     }
 
-    if (input3 != answer1 || input3 != answer2 || input3 != answer3 || input3 != answer4) {
+    if (input3 != answer1 && input3 != answer2 && input3 != answer3 && input3 != answer4) {
         return;
     }
 
-    if (input4 != answer1 || input4 != answer2 || input4 != answer3 || input4 != answer4) {
+    if (input4 != answer1 && input4 != answer2 && input4 != answer3 && input4 != answer4) {
         return;
     }
-    console.log(true);
+    //console.log(true);
     document.getElementById("sub2").style.display = "block";
 }
 
@@ -108,11 +108,11 @@ function check_section2_question1() {
     var input1 = document.getElementById("s2q1Answer1").value;
     var input2 = document.getElementById("s2q1Answer2").value;
 
-    if (answer1 != input1 || answer1 != input2) {
+    if (answer1 != input1 && answer1 != input2) {
         return;
     }
 
-    if (answer2 != input1 || answer2 != input2) {
+    if (answer2 != input1 && answer2 != input2) {
         return;
     }
 
