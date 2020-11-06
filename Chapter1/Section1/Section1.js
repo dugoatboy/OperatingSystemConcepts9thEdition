@@ -48,11 +48,17 @@ function check_section1_question2() {
     }
 
     if(ans >= 4) {
-        var sub3 = document.getElementById("sub2");
-        sub2.style.display = "block";
+        var s1q3 = document.getElementById("s1q3");
+        s1q3.style.display = "block";
     }
 }
 
-function checkQ3() {
-    console.log(true);
+function check_section1_question3() {
+    var answer1 = "provides the basic computing resources for the system"
+    var input1 = document.getElementById("s1q3Answer1").value;
+
+    if (answer1 == input1) {
+        //TODO
+        console.log(true);
+    }
 }
