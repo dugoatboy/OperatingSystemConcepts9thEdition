@@ -58,6 +58,16 @@ function check_section1_question3() {
     var input1 = document.getElementById("s1q3Answer1").value;
 
     if (answer1 == input1) {
+        var s1q4 = document.getElementById("s1q4");
+        s1q4.style.display = "block";
+    }
+}
+
+function check_section1_question4() {
+    var answer1 = "defines the ways in which the computer's resources are used to solve the user's problems"
+    var input1 = document.getElementById("s1q4Answer1").value;
+
+    if (answer1 == input1) {
         //TODO
         console.log(true);
     }
