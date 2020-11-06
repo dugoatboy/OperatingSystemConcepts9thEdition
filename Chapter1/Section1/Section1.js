@@ -1,3 +1,10 @@
+var q1 = false;
+var q2 = false;
+var q3 = false;
+
+document.getElementById("Subsection2").style.dislay = "none";
+document.getElementById("Subsection3").style.dislay = "none";
+
 function checkQ1() {
     console.log(true);
 }
