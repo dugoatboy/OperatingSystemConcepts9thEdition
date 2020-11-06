@@ -1,9 +1,9 @@
-var q1 = false;
-var q2 = false;
-var q3 = false;
+var sub1 = false;
+var sub2 = false;
+var sub3 = false;
 
-document.getElementsByClassName("Subsection2").style.dislay = "none";
-document.getElementsByClassName("Subsection3").style.dislay = "none";
+document.getElementById("sub2").style.dislay = "none";
+document.getElementById("sub3").style.dislay = "none";
 
 function checkQ1() {
     console.log(true);
