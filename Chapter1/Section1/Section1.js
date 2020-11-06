@@ -74,7 +74,7 @@ function check_section1_question4() {
 function check_section1_question5() {
     var answer1 = "personal computer"
     var answer2 = "mainframe terminal"
-    var answer3 = "workstation"
+    var answer3 = "workstations"
     var answer4 = "mobile devices"
     
     var input1 = document.getElementById("s1q5Answer1").value;
@@ -98,4 +98,83 @@ function check_section1_question5() {
         return;
     }
     
+    document.getElementById("sub2").style.display = "block";
+}
+
+function check_section2_question1() {
+    var answer1 = "resource allocator";
+    var answer2 = "control program";
+
+    var input1 = document.getElementById("s2q1Answer1").value;
+    var input2 = document.getElementById("s2q1Answer2").value;
+
+    if (answer1 != input1 || answer1 != input2) {
+        return;
+    }
+
+    if (answer2 != input1 || answer2 != input2) {
+        return;
+    }
+
+    document.getElementById("sub3").style.display = "block";
+}
+
+function check_section3_question1() {
+    var answer1 = "na";
+
+    var input1 = document.getElementById("s3q1Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s3q2").style.display = "block";
+}
+
+function check_section3_question2() {
+    var answer1 = "na";
+
+    var input1 = document.getElementById("s3q2Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s3q3").style.display = "block";
+}
+
+function check_section3_question3() {
+    var answer1 = "the program that runs continuously";
+
+    var input1 = document.getElementById("s3q3Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s3q4").style.display = "block";
+}
+
+function check_section3_question4() {
+    var answer1 = "programs associated with, but are not part of, the operating system";
+
+    var input1 = document.getElementById("s3q4Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("s3q5").style.display = "block";
+}
+
+function check_section3_question5() {
+    var answer1 = "a set of software frameworks provided to application developers";
+
+    var input1 = document.getElementById("s3q2Answer1").value;
+
+    if (answer1 != input1) {
+        return;
+    }
+
+    document.getElementById("success").style.display = "block";
 }

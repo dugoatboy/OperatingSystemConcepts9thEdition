@@ -102,36 +102,85 @@
             </section>
 
             <section class="Subsection" id="sub2" style="display: none;">
-                <div class="q2">
+                <div class="question_wrapper" id="s2q1">
                     <div class="question">
-
+                        Operating system's are these two things.
                     </div>
                 
                     <div class="answer">
-                        <input type="text" id="q2Answer1" name="q2Answer1">
-                        <input type="text" id="q2Answer2" name="q2Answer2">
-                        <input type="text" id="q2Answer3" name="q2Answer3">
-                        <input type="text" id="q2Answer4" name="q2Answer4">
+                        <input type="text" id="s2q1Answer1" name="s2q1Answer1">
+                        <input type="text" id="s2q1Answer2" name="s2q1Answer2">
+                    
                     </div>
 
-                    <button class="q2" onclick="checkQ2()">Submit</button>
-
+                    <button class="q" onclick="check_section2_question1()">Submit</button>
                 </div>
             </section>
+
             <section class="Subsection" id="sub3" style="display: none;">
-                <div class="q3">
+                <div class="question_wrapper" id="s3q1">
                     <div class="question">
-
+                        What is the official definition of Operating System?
                     </div>
                 
                     <div class="answer">
-                        <input type="text" id="q3Answer" name="q3Answer">
+                        <input type="text" id="s3q1Answer1" name="s3q1Answer1">                   
                     </div>
 
-                    <button class="q3" onclick="checkQ3()">Submit</button>
-
+                    <button class="q" onclick="check_section3_question1()">Submit</button>
                 </div>
+
+                <div class="question_wrapper" id="s3q2" style="display: none;">
+                    <div class="question">
+                        What is the official definition of what is part of an operating system?
+                    </div>
+                
+                    <div class="answer">
+                        <input type="text" id="s3q2Answer1" name="s3q2Answer1">                   
+                    </div>
+
+                    <button class="q" onclick="check_section3_question2()">Submit</button>
+                </div>
+
+                <div class="question_wrapper" id="s3q3" style="display: none;">
+                    <div class="question">
+                        What is the kernel?
+                    </div>
+                
+                    <div class="answer">
+                        <input type="text" id="s3q3Answer1" name="s3q3Answer1">                   
+                    </div>
+
+                    <button class="q" onclick="check_section3_question3()">Submit</button>
+                </div>
+
+                <div class="question_wrapper" id="s3q4" style="display: none;">
+                    <div class="question">
+                        What are system programs?
+                    </div>
+                
+                    <div class="answer">
+                        <input type="text" id="s3q4Answer1" name="s3q4Answer1">                   
+                    </div>
+
+                    <button class="q" onclick="check_section3_question4()">Submit</button>
+                </div>
+
+                <div class="question_wrapper" id="s3q5" style="display: none;">
+                    <div class="question">
+                        What is middleware?
+                    </div>
+                
+                    <div class="answer">
+                        <input type="text" id="s3q5Answer1" name="s3q5Answer1">                   
+                    </div>
+
+                    <button class="q" onclick="check_section3_question5()">Submit</button>
+                </div>
+
             </section>
+
+            <footer id="success"><h1>YOU SUCCESSFULLY ANSWERED ALL OF THE QUESTIONS!</h1></footer>
         </main>
     </body>
 </html>
