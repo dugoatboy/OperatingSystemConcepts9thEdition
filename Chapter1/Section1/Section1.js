@@ -12,7 +12,7 @@ function check_section1_question1() {
         ans++;
     }
 
-    if(ans3 == "hardware management" || ans3 == "basis for application programs" || ans3 == "intermediary between user and hardware") {
+    if(ans3 == "hardware management" || ans3 == "basis for application programs" || ans3 == "acts as intermediary between the user and the hardware") {
         ans++;
     }
 
